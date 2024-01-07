@@ -92,7 +92,7 @@ tl
             end:"top 5%",
             scrub:3
         }
-    })
+    },"hi")
 
 
     .to("#page7 h5,h1,h2",{
@@ -105,7 +105,7 @@ tl
             end:"top 5%",
             scrub:3
         }
-    })
+    },"hi")
 
 
     .to("#page8",{
@@ -118,7 +118,7 @@ tl
             end:"top 75%",
             scrub:3
         }
-    })
+    },"hi")
 
     .to("#page8 h3,h1,h5",{
         color:"white",
@@ -130,7 +130,7 @@ tl
             end:"top 75%",
             scrub:true
         }
-    })
+    },"hi")
 
 
 
