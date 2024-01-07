@@ -1,0 +1,1245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Neue Haas Grotesk Display Pro";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+#nav{
+    width: 100vw;
+    height: 5vh;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+    z-index: 99999;
+    position: fixed;
+    mix-blend-mode:difference;
+    color: #fff;
+
+}
+#nav h1{
+    font-size: 1.5vw;
+    color: #fff;
+
+}
+#nav h4{
+    font-size: .8vw;
+    font-weight: 100;
+    color: #fff;
+
+}
+
+
+
+#page1{
+    /* margin-top: 5vw; */
+    width: 100vw;
+    height:100vh;
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    
+}
+
+#page1>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#matter{
+    z-index: 9999;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    /* background-color: red; */
+    width: 100%;
+    text-align: center;
+}
+
+#matter h1{
+    font-size: 7.5vw;
+    font-weight: 100;
+}
+
+#matter h1 span::after{
+    content: "*";
+    color:rgb(255, 255, 9);
+}
+
+#matter h3{
+    font-size: 1.8vw;
+    font-weight: 100;
+    margin-top: 2vw;
+    line-height: 2.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page2{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#page2-video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#page2-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#gola{
+    width: 10vw;
+    height: 10vw;
+    background-color: #fff;
+    z-index: 99999;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+#gola i{
+    color: black;
+    font-size: 2vw;
+}
+
+
+
+
+
+
+#page3{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+
+}
+
+
+#page3-left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /* background-color: red; */
+}
+
+#page3-left video{
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    object-position: center;
+
+    /* background-color: #fff; */
+}
+
+
+
+#page3-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    padding: 2vw;
+}
+
+#page3-right h3{
+    margin-bottom: 5vw;
+    color: #fff;
+
+
+
+}
+
+
+#page3-right h1{
+    width: 80%;
+    font-size: 3vw;
+    margin-bottom: 5vw;
+    color: #fff;
+    font-weight: 200;
+}
+
+#page3-right h1:nth-child(3){
+    width: 90%;
+}
+
+
+
+#service{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+#service h1{
+    height: 100%;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+#page4{
+    width: 100vw;
+    min-height: 70vh;
+    /* background-color: red; */
+    position: relative;
+    padding: 5vw;
+    overflow: hidden;
+
+}
+
+#page4-cont{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#text{
+    display: flex;
+    align-items: center;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+#text h2{
+    font-size: 7vw;
+    margin-left: 15vw;
+    color: blue;
+}
+
+#text video{
+    border-radius: 50%;
+    margin-left: 7vw;
+    width: 6%;
+
+}
+
+
+
+@keyframes anime {
+    100%{
+        transform: translateX(0);
+    }
+
+    0%{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+#page5{
+    width: 100vw;
+    min-height: 80vh;
+    /* background-color: black; */
+    position: relative;
+}
+
+#page5 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+}
+
+#video1{
+    opacity: 0;
+}
+
+
+#video2{
+    opacity: 0;
+}
+
+#video3{
+    opacity: 0;
+}
+
+/* .part1{
+    color: #fff;
+}
+
+.part2{
+    color: #fff;
+}
+
+.part3{
+    color: #fff;
+}
+ */
+
+
+#page5-cont{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-left: 10vw; */
+    padding: 2vw 1vw;
+    z-index: 9999;
+    /* background-color: red; */
+}
+
+
+
+#page5-cont h1{
+    font-size: 5vw;
+    cursor: pointer;
+    color: white;
+    z-index: 9999;
+    /* background-color: red; */
+    padding: 1vw;
+}
+
+#but{
+    width: 30%;
+    text-align: center;
+    /* background-color: red; */
+    z-index: 99999;
+    position: relative;
+}
+#but button{
+    padding: .5vw 1vw;
+    border-radius: 3vw; 
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    margin-left: 1vw;
+    /* z-index: -1; */
+    cursor: pointer;
+    /* opacity: 0; */
+    /* position: absolute; */
+}
+
+.but3{
+    text-align: start;
+    opacity: 0;
+}
+
+.but2{
+    opacity: 0;
+}
+
+.but1{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+#page6{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7vw;
+    /* overflow: hidden; */
+    background-color: black;
+}
+
+
+
+#page6-left{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /* background-color: red; */
+    margin-left: 5vw;
+}
+
+
+
+
+#page6-left h3{
+    margin-bottom: 5vw;
+    color: #fff;
+}
+
+
+#page6-left h1{
+    width: 70%;
+    font-size: 2.5vw;
+    margin-bottom: 5vw;
+    color: #fff;
+
+    font-weight: 200;
+}
+
+#page6-left h1:nth-child(3){
+    width: 80%;
+}
+
+
+
+#page6-right{
+    width: 50%;
+    height: 100%;
+    padding: 3vw;
+    position: relative;
+    /* background-color: blue; */
+}
+
+#page6-right video{
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    object-position: center;
+
+    /* background-color: #fff; */
+}
+
+
+
+
+
+
+#values{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.115);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+#values h1{
+    height: 100%;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+
+
+
+
+#page7{
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+    padding: 5vw;
+    background-color: white;
+}
+
+#page7 h5{
+    width: 30%;
+    /* background-color: red; */
+    font-size: 1.5vw;
+    font-weight: 100;
+    color: black;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+#page7-cont{
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+}
+
+#page7-cont h1{
+    width: fit-content;
+    /* background-color: bisque; */
+    font-size: 4vw;
+    font-weight: 100;
+    animation-name: identifier;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: black;
+}
+
+#page7-cont h2{
+    font-size: 4vw;
+    font-weight: 100;
+    animation-name: identifier;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    color: black;
+    margin-top: 3vw;
+}
+
+@keyframes identifier {
+    100%{
+        transform: translateX(0);
+    }
+
+    0%{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+#page8{
+    width: 100vw;
+    height: 70vh;
+    background-color: white;
+    padding: 5vw;
+}
+
+#page8-cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: vw; */
+}
+
+#page8-cont h3{
+    color: black;
+    width: 30%;
+    margin-bottom:2vw;
+    /* background-color: red; */
+    text-align: center;
+}
+
+#page8-cont h1{
+    /* width: 30%; */
+    text-align: center;
+    font-size: 1.5vw;
+    /* background-color: red; */
+    color: black;
+    cursor: pointer;
+    margin-bottom: 2vw;
+}
+
+
+
+#page8-cont h5{
+    width: 30%;
+    text-align: center;
+    /* background-color: red; */
+    color: red;
+    font-size: 1.3vw;
+    margin-bottom: 2vw;
+}
+
+
+
+
+
+
+#page9{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #ffffff73;
+    position: relative;
+}
+
+#page9 h1{
+    /* background-color: red; */
+    padding: 1vw;
+    position: relative;
+}
+
+#insta{
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+    background-color:rgba(128, 128, 128, 0.804);
+    padding: 1vw;
+    color: #fff;
+    animation-name: mark;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: none;
+    position: absolute;
+    top: 22%;
+    cursor: pointer;
+    transition: all linear 1s;
+    pointer-events: none;
+}
+
+@keyframes mark {
+    100%{
+        transform: translateX(0);
+    }
+
+    0%{
+        transform: translateX(-30%);
+    }
+}
+
+
+
+#x{
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+    background-color:rgba(128, 128, 128, 0.372);
+    padding: 1vw;
+    color: #fff;
+    animation-name: mark;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: none;
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+    transition: all linear 1s;
+    pointer-events: none;
+
+}
+
+
+
+#yt{
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+    background-color:rgba(128, 128, 128, 0.372);
+    padding: 1vw;
+    color: #fff;
+    animation-name: mark;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: none;
+    position: absolute;
+    top: 57%;
+    cursor: pointer;
+    transition: all linear 1s;
+    pointer-events: none;
+
+}
+
+
+#link{
+    width: fit-content;
+    height: fit-content;
+    white-space: nowrap;
+    background-color:rgba(128, 128, 128, 0.372);
+    padding: 1vw;
+    color: #fff;
+    animation-name: mark;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: none;
+    position: absolute;
+    top: 77%;
+    cursor: pointer;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 1s;
+    pointer-events: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+#page10{
+    width: 100vw;
+    height: 90vh;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#page10 h1{
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    font-size: 7vw;
+    font-weight: 100;
+    z-index: 999999;
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+#page10 h3{
+    color: #fff;
+    position: absolute;
+    font-size: 1.5vw;
+    font-weight: 100;
+    top: 58%;
+    z-index: 999999;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    /* background-color: red; */
+}
+
+
+
+
+
+#footer{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw;
+    position: relative;
+    margin-top: -2vw;
+    background-color: black;
+}
+
+
+
+#left h3{
+    color: #ffffff97;
+    margin-bottom: 1vw;
+    font-size: .8vw;
+}
+#left a{
+    color: #fff;
+}
+
+
+#right h2{
+    color: #fff;
+    margin-bottom: 1vw;
+    font-size: 1.2vw;
+}
+#right h3{
+    color: #ffffff92;
+    margin-bottom: 1vw;
+    font-size: .8vw;
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE. */
+
+
+
+@media (max-width:600px) {
+
+
+    #nav{
+        padding: 6vw 3vw;
+    }
+    #nav h1{
+        font-size: 6vw;
+    }
+    #nav h4{
+        font-size: 3vw;
+    }
+
+
+    #page1{
+        /* margin-top: 5vw; */
+        width: 100vw;
+        height:100vh;
+        /* background-color: red; */
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        
+    }
+
+
+    #matter h1{
+        font-size: 12vw;
+        font-weight: 100;
+        line-height: 15.5vw;
+    }
+
+
+    #matter h3{
+        font-size:5.5vw;
+        line-height: 9vw;
+        margin-top: 10vw;
+    }
+
+
+
+
+
+    #page2{
+        width: 100vw;
+        height: 50vh;
+        /* background-color: blue; */
+        position: relative;
+    }
+    
+    #gola{
+        width: 20vw;
+        height: 20vw;
+    }
+    
+    #gola i{
+        color: black;
+        font-size: 4vw;
+    }
+    
+
+
+
+
+
+    #page3{
+        width: 100vw;
+        height: 100vh;
+        /* background-color: red; */
+        flex-direction: column;
+    }
+
+   
+    #page3-left{
+        width: 50%;
+        height: 100%;
+        position: relative;
+        /* background-color: red; */
+    }
+
+    #page3-left video{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    #page3-right{
+        width: 100%;
+        height: 100%;
+        /* background-color: blue; */
+        padding: 2vw;
+    }
+
+    #page3-right h3{
+        margin-bottom: 6vw;
+        color: black;
+    }
+
+
+    #page3-right h1{
+        width: 100%;
+        font-size: 7vw;
+    }
+
+    #page3-right h2{
+        width: 90%;
+        font-size: 7vw;
+
+    }
+
+    #service{
+        width: 25vw;
+        height: 25vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #service h1{
+        font-size: 4vw;
+    }
+
+
+
+
+    #page4{
+        width: 100vw;
+        min-height: 50vh;
+        /* background-color: red; */
+        margin-top: 15vw;
+
+    }
+
+    #text{
+        animation-duration: 5s;
+    }
+
+    #text h2{
+        font-size: 10vw;
+        margin-left: 25vw;
+    }
+
+    #text video{
+        border-radius: 50%;
+        margin-left: 10vw;
+        width: 10%;
+
+    }
+
+
+
+
+
+
+    #page5{
+        width: 100vw;
+        min-height: 60vh;
+        /* background-color: rgb(248, 152, 152); */
+        position: relative;
+    }
+    
+
+
+    #page5-cont{
+        justify-content: space-between;
+        padding: 2vw 1vw;
+    }
+
+
+
+
+    #page5-cont h1{
+        font-size: 8vw;
+        margin-bottom: 6vw;
+
+    }
+
+ 
+    #but button{
+
+        display: none;
+    }
+
+
+
+
+
+
+
+
+    #page6{
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column-reverse;
+        background-color: black;
+    }
+
+
+
+    #page6-left{
+        width: 100%;
+        height: 100%;
+        margin-left: 0vw;
+    }
+
+
+
+
+    #page6-left h1{
+        width: 70%;
+        font-size: 5.5vw;
+        margin-bottom: 5vw;
+
+
+    }
+
+    #page6-left h1:nth-child(3){
+        width: 80%;
+
+
+    }
+
+
+    #page6-right video{
+        width: 100%;
+        height: 80%;
+    }
+
+
+
+
+    #values{
+        width: 30vw;
+        height: 30vw;
+        border: 1px solid rgba(0, 0, 0, 0.115);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #values h1{
+        height: 100%;
+        font-size: 4vw;
+    }
+
+
+
+
+    #page7{
+        width: 100vw;
+        height: 50vh;
+        overflow: hidden;
+        padding: 7vw;
+        /* background-color: black; */
+    }
+    #page7 h5{
+        width: 50%;
+        font-size: 5vw;
+        margin-bottom: 10vw;
+        color: #fff;
+    }
+
+ 
+
+    #page7-cont h1{
+        width: fit-content;
+        font-size: 14vw;
+        animation-duration: 90s;
+        color: #fff;
+
+    }
+
+    #page7-cont h2{
+        width: fit-content;
+        font-size: 14vw;
+        animation-duration: 90s;
+        color: #fff;
+
+    }
+
+
+
+
+    #page8{
+        width: 100vw;
+        height: 70vh;
+        padding: 5vw;
+        /* background-color: black; */
+    }
+
+    #page8-cont{
+        flex-direction: column;
+    }
+
+    #page8-cont h3{
+        color: #fff;
+
+        width: 100%;
+        margin-bottom:2vw;
+        text-align: start;
+        margin-bottom: 5vw;
+
+    }
+
+    #page8-cont h1{
+        width: 100%;
+        text-align: start;
+        font-size:4vw;
+        margin-bottom: 4vw;
+        color: #fff;
+
+    }
+
+
+
+    #page8-cont h5{
+        width: 100%;
+        text-align: end;
+        /* background-color: blue; */
+        color: red;
+        font-size: 3vw;
+        margin-bottom: 6vw;
+        margin-top: -7vw;
+        color: #fff;
+
+    }
+
+
+
+
+    #page9 h1{
+        font-size: 5vw;
+    }
+
+
+
+    #page10{
+        width: 100vw;
+        height: 90vh;
+        background-color:black;
+    }
+    #page10 video{
+        width: 80%;
+    }
+
+
+    #page10 h1{
+        width: 70%;
+        border-bottom: 2px solid white;
+        top: 52%;
+        font-size: 12vw;
+    }
+
+    #page10 h3{
+        font-size: 5vw;
+        top: 65%;
+        width: 100%;
+        /* background-color: red; */
+    }
+
+
+
+
+
+    #footer{
+        width: 100vw;
+        height: fit-content;
+    }
+
+
+
+    #left h3{
+        color: #ffffff97;
+        margin-bottom: 2vw;
+        font-size: 4vw;
+    }
+    #left a{
+        color: #fff;
+    }
+
+
+    #right h2{
+        color: #fff;
+        margin-bottom: 1vw;
+        font-size:4vw;
+    }
+    #right h3{
+        color: #ffffff92;
+        margin-bottom: 2vw;
+        font-size: 4vw;
+    }
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
